@@ -16,10 +16,10 @@ class Deck:
 	def __init__(self, num_decks):
 		self.suits = [ '♠', '♥', '♦', '♣' ];
 		self.ranks = [ 'A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K' ];
-		self.cards = [s+r for s in suits for r in ranks] * num_decks
+		self.cards = [s+r for s in self.suits for r in self.ranks] * num_decks
 		random.shuffle(self.cards)
 
-	def draw(no_of_cards):			
-		drawnHand = ShuffledDeck[:no_of_cards];
-		del ShuffledDeck[:no_of_cards]
+	def draw(self,no_of_cards):			
+		drawnHand = self.cards[:no_of_cards];
+		del self.cards[:no_of_cards]
 		return drawnHand

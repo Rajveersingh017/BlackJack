@@ -20,16 +20,16 @@ class Hand():
 		else:
 			self.card_in_hand.append(new_cards)
 
-	def getValue(currentCard):
+	def getValue(self):
 		currentRank = '';
 		value=0;
 		ranks =[];
 		
-		for card in currentCard:
+		for card in self.card_in_hand:
 			currentRank = card[1:]
 			match currentRank:
 				case 'A':
-					currentRank = 10
+					currentRank = 1
 				case 'J':
 					currentRank = 10
 				case 'Q':
