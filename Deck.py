@@ -1,7 +1,7 @@
 import random
 
 class Deck:
-	 """
+	"""
 	    A class representing a deck of playing cards.
 
 	    Attributes:
@@ -11,7 +11,7 @@ class Deck:
 
 	    Methods:
 	        draw(no_of_cards): Draws a number of cards from the deck.
-	        
+
     """
 	def __init__(self, num_decks):
 		self.suits = [ '♠', '♥', '♦', '♣' ];
